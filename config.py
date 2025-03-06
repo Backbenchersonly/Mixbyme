@@ -114,8 +114,8 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 #you can add admin inside the bot(bug right now will fix later)
 
 try:
-    ADMINS=[7550106593]
-    for x in (os.environ.get("ADMINS", "7550106593").split()):
+    ADMINS=[]
+    for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
